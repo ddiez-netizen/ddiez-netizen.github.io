@@ -5,9 +5,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web de Didac</title>
+  <title>web de Didac</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" integrity="sha512-EBLzUL8XLl+va/zAsmXwS7Z2B1F9HUHkZwyS/VKwh3S7T/U0nF4BaU29EP/ZSf6zgiIxYAnKLu6bJ8dqpmX5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/core.min.js" integrity="sha512-GuVoeU19Vs7el8GKo3lq2ogzwCIRBuQDnSL0rtHD4KVq3EymKgG4Uj/SEbbggJ+o+ocAcwdbn8hPSgdVPKdPlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/css.min.js" integrity="sha512-fQhadp2Av4sRhTYd9TEggQW4NrosThwDUXIMLin90uepvmCZG0mRTdPVtHujrXD22qMTtdQlrAEdvWocezI8ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js" integrity="sha512-yfJUrNGEC39mHLjZ37CZG69Ij9Vnan7NHxXVuuBxafgfk4F+n7j/NhNWtyhKGTYEgWfgUqzPYMZJZY1HIsPCbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* 1. Submenús en mode fosc */
     body[data-bs-theme="dark"] .dropdown-menu {
@@ -28,7 +33,7 @@
       border: none;
       background: transparent;
       font-size: 1.3rem;
-      color: inherit;
+      color: red;
     }
 
     /* 3. Hamburguesa blanca en mode fosc */
@@ -67,8 +72,8 @@
   <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top">
     <div class="container-fluid">
       <!-- 5. Logo i text -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="logo.png" alt="Logo" class="logo rounded-circle me-2">
+      <a class="navbar-brand d-flex align-items-center" href="https://ycastro4.github.io">
+        <img src="https://ycastro4.github.io/logo.png" alt="Logo" class="logo rounded-circle me-2">
         <span class="fw-bold">Web d'alumne</span>
       </a>
 
@@ -80,26 +85,26 @@
       <!-- Menú -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- Robot Poeta -->
+          <!-- Lenguatges de Programació -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="proj1Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-diagram-project me-1"></i> Llenguatges de programacio
-            </a>
+              <i class="fa-solid fa-diagram-project me-1"></i> Llenguatges de programació
+                    </a>
             <ul class="dropdown-menu" aria-labelledby="proj1Dropdown">
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-robot me-1"></i> HTML1</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book me-1"></i> CSS2</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book-open me-1"><i>Javiscrip</a></i>
+              <li><a class="dropdown-item" href="https://ycastro4.github.io/html/"><i class="fa-solid fa-code me-1"></i>HTML</a></li>
+              <li><a class="dropdown-item" href="https://ycastro4.github.io/css/"><i class="fa-brands fa-css me-1"></i>CSS</a></li>
+              <li><a class="dropdown-item" href="https://ycastro4.github.io/javascript/"><i class="fa-brands fa-square-js me-1"></i>Javascript</a></li>
             </ul>
-            
           </li>
-          <!-- Projecte 2 -->
+          <!-- Robot poeta -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-folder-open me-1"></i> Projecte 2
+              <i class="fa-solid fa-folder-open me-1"></i> Robot poeta
             </a>
             <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
-              <li><a class="dropdown-item" href="https://ddiez-netizen.github.io/"><i class="fa-solid fa-chart-line me-1"></i> Projecte 2.1</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cogs me-1"></i> Projecte 2.2</a></li>
+              <li><a class="dropdown-item" href="https://vgonzale-jpg.github.io/robot1"><i class="fa-solid fa-robot" me-1"></i>Robot poeta 1</a></li>
+              <li><a class="dropdown-item" href="https://vgonzale-jpg.github.io/robot2"><i class="fa-solid fa-robot" me-1"></i>Robot poeta 2</a></li>
+              <li><a class="dropdown-item" href="https://vgonzale-jpg.github.io/robot3"><i class="fa-solid fa-robot" me-1"></i>Robot poeta 3</a></li>
             </ul>
           </li>
         </ul>
@@ -108,23 +113,62 @@
       </div>
     </div>
   </nav>
-  <!-- Contingut -->        0000
-  <main class="container py-5">
-    <h1 class="display-5 fw-bold mb-4">Benvinguts a la web de Didac</h1>
-    <p class="lead">Aquesta es la web de ovtativa de robotica de tercer d'eso feta a <a href="https://agora.xtec.cat/ies-pompeu-fabra-martorell/">l'institut Pompeu Fabra de Martorell</a></p>
-    <p class="lead">El primer projecta es per el <a href="https://www.unesco.org/es/days/poetry"/>Dia internacional de la poesia de la UNESCO</a> que sera el 21 de març de 2026.</p>
-    <p class="lead"> L'objectiu del primer projecte es fer un robot poeta. Necessitem apendre tres llengues:
-      <ul>
-      
-    <img scr="html.jpng">
 
-        <li>HTML: Lenguatge de Marques de HiperText, utilitza marques com &lt;p&gt; per crrear llistes desordenades,&lt;p&gt; per crrear llistes ordenades. Per imatges escrivim &lt;img scr=" "&gt;. També permet fer taules,posar videos i audios.<li>
-          <img scr="css.png">
-        <li>CSS: Full de d'estils en cascada :dona forma al html anterior , permet triar tipos de lletra , el color de la lletra , el color de fons , els marges i tot l'estil de la página. Sempre s'escriu aquesta estructura marca propietat1 : valor1.</li>   
-        <li>Javascript permet el codi interactiu i tot el comportament de la pagina</li>
-            <img scr="javascript.jpg">
-  ç</main>
-        
+  <!-- Contingut -->
+  <main class="container py-5">
+    <h1 class="display-5 fw-bold mb-4">Aprenem CSS</h1>
+    <p class="lead">En aquesta pàgina farem practiques de CSS</p>
+     <pre><code class="language-css">
+    body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  text-align: left;
+}
+
+       @font-face {
+  font-family: 'Anna Vives';
+  src: url('https://ycastro4.github.io//ana.ttf');
+}
+
+body {
+  font-family: 'Anna Vives', cursive;
+}
+p {
+  font-size: 20px;
+  
+}
+</code></pre>
+    <style>
+    body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  text-align: left;
+}
+
+p {
+  font-family: white;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+  <style>@keyframes moure { 0% { left: 0; } 100% { left: 100px; } } 
+.esmou { position: relative; background: green; width: 450px; 
+        height: 50px; animation: moure 2s infinite alternate; }</style><div></div>
+  
+
+<p class="esmou"> Hola, aixó es una pràctica de css per veure el moviment de les lletres i emojis 😂.</p>
+
+<h1>El meu primer codi CSS.</h1>
+<p>Aixó es un paragraf i puc canviar el tipus de lletra, el color del fons, etc.</p>
+  </main>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     // Mode clar/fosc amb canvi d'icona
