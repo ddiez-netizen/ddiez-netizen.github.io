@@ -106,7 +106,7 @@ function analitzarSentiment(text) {
     let sentiment = "neutral";
     let missatge = "Sentiment neutral";
     
-    if (puntuacio > 2) {
+    if (puntuacio > 100) {
         sentiment = "positiu";
         missatge = "😊 Sentiment molt positiu";
     } else if (puntuacio > 0) {
